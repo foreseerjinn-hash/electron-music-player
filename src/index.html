@@ -33,65 +33,44 @@
               w-100
               overflow-hidden">
               
-  <div class="container-fluid">
+  <div class="container-fluid"
+       id="canvas">
 
    <div class="box
                border
+               border-2
+               border-danger
+               rounded-pill
+               h-75
                position-absolute
-               mt-4
+               mt-5
+               pt-5
                mx-3">
    </div>
    <div class="box2
-               border">
+               border
+               border-5
+               border-danger
+               rounded-pill
+               h-75
+               w-75
+               position-absolute
+               m-5">
    </div>
-   <div class="box3
-               border">
-   </div>
-   <div class="box4
-               border">
-   </div>
-   <div class="box5
-               border">
-   </div>
-   <div class="box6
-               border">
-   </div>
-   <div class="box7
-               border">
-   </div>
-   <div class="box8
-               border">
-   </div>
-   <div class="box9
-               border">
-   </div>
-   <div class="box10
-               border">
-   </div>
-   <div class="box11
-               border">
-   </div>
-   
-   <img src="../assets/img/skelly 3.png"
-        class="img1
-               position-relative"
-        alt="y2k inspired text">
 
-   <div>
-    <h1 class="position-absolute
-               mx-2
-               fw-bold">
-     Music 
+   <h1 class="position-relative
+              mx-2
+              fw-bold">
+    Music 
 <br>
-     &nbsp &nbsp Player
-    </h1>    
-   </div>
-
+    &nbsp&nbspPlayer
+   </h1> 
+   
    <div class="music
                position-absolute
                d-inline-flex
                h-25
-               w-100">
+               w-75">
     <input type="range" 
            value="0" 
            min="0" 
@@ -130,10 +109,12 @@
           class="vol
                  position-absolute
                  m-4">
+                 
    <input type="file" 
           class="Upld
                  d-inline
                  mx-5
+                 p-1
                  position-absolute" 
           name="files[0]" 
           id="upload" 

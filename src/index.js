@@ -26,6 +26,7 @@ function handleFiles(event)
  .src = audArr1[0];
  audio
  .load;
+ console.log(audArr1);
 }
 
 let file = document
@@ -57,18 +58,10 @@ function fetchFile()
 
 function currSong(nextOrPreviousSong)
 {
-// either next/prevSong 
-// or currentSong if we 
-// just paused it
-// otherwise use first 
-// song from array
  const songToPlay = nextOrPreviousSong ? nextOrPreviousSong : 
  currentSong ? currentSong : audArr1[0];
  currentSong = songToPlay;
- audio
- .src = currentSong
- audio
- .play()
+ audio.play();
  button = "playing"
 }
 
@@ -79,6 +72,11 @@ const nextSong = () =>
  const nextIndex = currentIndex + 1;
  const nextSong = audArr1[nextIndex];
  currSong(nextSong);
+ audio
+ .src = nextSong;
+ audio
+ .play();
+ button = "playing";
 };
 
 const previousSong = () => 
@@ -87,7 +85,11 @@ const previousSong = () =>
                       .indexOf(currentSong);
  const prevIndex = currentIndex - 1;
  const prevSong = audArr1[prevIndex];
- currSong(prevSong);
+ audio
+ .src = prevSong;
+ audio
+ .play();
+ button = "playing";
 };
 
 document
@@ -123,7 +125,6 @@ document
                   () => 
                   {previousSong();});
 
-
 let volume = document.
              getElementById("vol");
 volume
@@ -134,14 +135,6 @@ volume
                    .volume = e
                    .currentTarget
                    .value / 100;
-                   volume
-                   .style
-                   .background = `linear-gradient
-                                  (to top, 
-                                   var(--md-sys-color-on-surface-variant) 0%, 
-                                   var(--md-sys-color-on-surface-variant) ${progress}%, 
-                                   var(--md-sys-color-surface-variant) ${progress}%, 
-                                   var(--md-sys-color-surface-variant) 100%)`;
                   }) 
 
 audio
@@ -160,8 +153,8 @@ audio
                    {
                     progressEl
                     .value = audio
-                             .currentTime/ audio
-                                           .duration * 100;
+                             .currentTime / audio
+                                            .duration * 100;
                    }
                   });
 
