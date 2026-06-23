@@ -1,6 +1,6 @@
 body {
  -webkit-app-region: drag;
- background-color: #181818dd;
+ background-color: #000000db;
 }
 
 .start-50 {
@@ -74,13 +74,13 @@ body {
 h1 {
  top: 255px;
  font-family: Regano;
- color: #3a4852;
+ color: #3e3f40;
  letter-spacing: 6px;
  font-size: 19vw;
  line-height: 45px;
  opacity: 80%;
- text-shadow: -2.5px -2.5px 6px #242d38,
-              3px 3px 15px #44525c;
+ text-shadow: -2.5px -2.5px 6px #2d2e2e,
+              3px 3px 15px #4f5051;
  filter: blur(1.2px);
 }
 
