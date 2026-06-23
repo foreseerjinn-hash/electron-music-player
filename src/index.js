@@ -23,7 +23,7 @@ function handleFiles(event)
                         .createObjectURL(f);
                 });
  audio
- .src = audArr1[0];
+ .src = audArr1;
  audio
  .load;
  console.log(audArr1);
