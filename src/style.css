@@ -78,7 +78,7 @@ h1 {
  letter-spacing: 6px;
  font-size: 19vw;
  line-height: 45px;
- opacity: 100%;
+ opacity: 80%;
  text-shadow: -2.5px -2.5px 6px #242d38,
               3px 3px 15px #44525c;
  filter: blur(1.2px);
@@ -94,7 +94,7 @@ h1 {
  background: transparent;
  -webkit-appearance: none; 
  cursor: pointer;
- opacity: 40%;
+ opacity: 20%;
  &:hover { width: 100px; }
  &.vol::-webkit-slider-runnable-track {
                                         height: 2px;
@@ -129,7 +129,7 @@ h1 {
   height: 45px;
   border: solid 
           thin 
-          #000000;
+          #ffffff5b;
   box-shadow: 3px 4px 10px #000;
   opacity: 30%;
   -webkit-app-region: no-drag;
@@ -174,7 +174,7 @@ button {
                     0.07);
  border: solid 
          thin 
-         #000000;
+         #ffffff5b;
  box-shadow: 3px 4px 10px #000;
  opacity: 30%;
  -webkit-app-region: no-drag;
